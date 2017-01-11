@@ -8,7 +8,7 @@ class AccountsController < ApplicationController
     if @account.save
       redirect_to root_path, notice: 'Signed up successfully'
     else
-      reder action: 'new'
+      render action: 'new'
     end
   end
 
