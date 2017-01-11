@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: austin
+  password:
+
+development:
+  <<: *default
+  database: Multi-Tenancy_Pundit_Example_development
+
+test:
+  <<: *default
+  database: Multi-Tenancy_Pundit_Example_test
+
+production:
+  <<: *default
+  database: Multi-Tenancy_Pundit_Example_production
+  username: Multi-Tenancy_Pundit_Example
+  password: <%= ENV['MULTI-TENANCY_PUNDIT_EXAMPLE_DATABASE_PASSWORD'] %>
