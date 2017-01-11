@@ -1,9 +1,12 @@
 <h2>Create an Account</h2>
-
-<%= form_for @account do |f| %>
-  <p>
-    <%= f.label :subdomain %>
-    <%= f.text_field :subdomain %>
-  </p>
-  <%= f.submit %>
-<% end %>
+<div class="col-md-12">
+  <%= simple_form_for @account do |f| %>
+    <div class="row">
+      <div class="form-group col-md-8">
+        <%= f.label :subdomain %>
+        <%= f.text_field :subdomain, class: "form-control" %>
+      </div>
+    </div>
+    <%= f.submit("Create Account", class: "btn btn-success btn-md") %>
+  <% end %>
+</div>
