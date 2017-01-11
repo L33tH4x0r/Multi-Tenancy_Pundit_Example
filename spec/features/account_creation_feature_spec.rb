@@ -5,10 +5,10 @@ describe 'account creation' do
         visit root_path
         click_link "Create Account"
 
-        fill_in 'Name', with: 'Austin'
-        fill_in 'Email', with: "austin@dringo.io"
-        fill_in "Password", with: "password"
-        fill_in "Password Confirmation", with: "password"
+        # fill_in 'Name', with: 'Austin'
+        # fill_in 'Email', with: "austin@dringo.io"
+        # fill_in "Password", with: "password"
+        # fill_in "Password Confirmation", with: "password"
         fill_in "Subdomain", with: "test_subdomain"
         click_button "Create Account"
 
