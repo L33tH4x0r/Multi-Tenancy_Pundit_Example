@@ -69,6 +69,7 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (0.0.10)
     diff-lcs (1.2.5)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -271,6 +272,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   database_cleaner
   devise
+  devise-bootstrap-views
   factory_girl_rails
   guard
   guard-livereload
@@ -280,6 +282,7 @@ DEPENDENCIES
   less-rails
   listen (~> 3.0.5)
   pg (~> 0.18)
+  pry
   puma (~> 3.0)
   rails (~> 5.0.1)
   rspec-rails
